@@ -19,7 +19,7 @@
             : java, php, python 등 프로그래밍 언어를 사용
 
 2.HTML문서의 기본 구조
-\```
+```
 <!DOCTYPE html>  
 현재문서가 HTML 언어로 작성할 웹 문서라는 뜻
 <html lang="en">
@@ -37,5 +37,5 @@
 </body>
 
 </html>
-\```
+```
 안녕하세요
