@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            transition: all 0.3s ease;
+            position: absolute;
+            background-image: url('/img/다운로드.png');
+            transition-duration: 0s;
+            background-size: contain;
+        }
+
+        #move:hover {
+            background-color: blue;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="move">
+        나 잡아봐랑
+    </div>
+
+    <script>
+        const moveElement = document.querySelector('#move');
+
+        moveElement.addEventListener('mouseover', () => {
+            const maxX = window.innerWidth - moveElement.clientWidth;
+            const maxY = window.innerHeight - moveElement.clientHeight;
+
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+
+            moveElement.style.left = randomX + 'px';
+            moveElement.style.top = randomY + 'px';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        li {
+            /* background-color: transparent !important; */
+            display: inline-block;
+        }
+
+        .navi ul li {
+            float: left;
+            width: 150px;
+            padding: 10px;
+        }
+
+        .navi a:link,
+        .navi a:visited {
+            display: block;
+            font-size: 14px;
+            color: pink;
+            padding: 10px;
+            text-decoration: none !important;
+            text-align: center;
+        }
+
+        .navi a:hover, .navi a:focus {
+            background-color: green;
+            color: blue;
+        }
+
+        .navi a:active {
+            background-color: purple !important;
+        }
+
+        #intro:target {
+            background-color: blue !important;
+            color: red;
+        }
+
+        /* Hover 시 추가 정보 표시 스타일 */
+        #holy:hover {
+            color: yellow;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navi">
+        <ul>
+            <li><a href="#intro" title="english">Home</a></li>
+            <li><a href="#holy" title="korea">About</a></li>
+            <li><a href="#" title="japan">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>
+
+    <div id="intro" class="content">
+        <h2>오점메</h2>
+        라면, 김밥
+    </div>
+    <div>
+        <h2 id="holy">저점메</h2>
+        김치, 삼겹살
+    </div>
+</body>
+
+</html>

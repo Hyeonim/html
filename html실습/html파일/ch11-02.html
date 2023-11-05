@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+
+    }
+
+    #box2 {
+        background-color: red;
+        animation-name: shape;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    #box1 {
+        background-color: blue;
+        animation-name:rotate;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shape {
+        from {
+            background-color: red;
+        }
+
+        to {
+            background-color: pink;
+            border-radius: 50%;
+        }
+    }
+
+    @keyframes rotate {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+    #box3{
+        width: 300px;
+        height: 300px;
+        animation-name: pig;
+        background-image: url(/img/pi.jpeg);
+        animation-duration: 3s;
+        background-size: cover;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes pig {
+        from{
+            background-image: url(/img/pi.jpeg);
+
+        }
+        to{
+            background-image: url(/img/다운로드.png);
+        }
+        
+    }
+</style>
+
+<body>
+    <div class="box" id="box1">
+
+    </div>
+    <div class="box" id="box2">
+
+    </div>
+
+    <div class="box" id="box3">
+
+
+    </div>
+</body>
+
+</html>

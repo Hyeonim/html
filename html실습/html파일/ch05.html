@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>회원가입</legend>
+            <label>아이디 :
+                <input type="text" name="id" size="10" maxlength="15" autofocus>
+            </label>
+
+            <label>비밀번호 :
+                <input type="password" name="password" size="10" maxlength="16">
+            </label>
+            <input type="submit" value="로그인">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+                <li>이름 :
+                    <input type="text" name="name" placeholder="이름을 입력하세요">
+                </li>
+                <li>배송 주소 :
+                    <input type="text" name="address">
+                </li>
+                <li>이메일 :
+                    <input type="email" name="email">
+                </li>
+                <li>연락처 :
+                    <input type="tel" name="phone">
+                </li>
+                <input type="submit" value="등록">
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>상품 선택</legend>
+            <p>주문할 상품을 선택해 주세요</p>
+            <label><input type="checkbox" value="3">선물용 3kg</label>
+            <label><input type="checkbox" value="4">선물용 5kg</label>
+            <label><input type="checkbox" value="5">가정용 3kg</label>
+            <label><input type="checkbox" value="6">가정용 5kg</label>
+
+            <p>포장 선택</p>
+
+            <label><input type="radio" name="gift" value="1" checked>선물 포장</label>
+            <label><input type="radio" name="gift" value="2">선물 포장 안 함 </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul style="list-style: none;">
+                <li>주문 상품<input type="text"></li>
+                <li>이름<input type="text"></li>
+                <li>배송 주소<input type="text" required></li>
+                <li>이메일<input type="email"></li>
+                <li>연락처<input type="tel" placeholder="하이폰 뺴고 입력해주세요"></li>
+                <li>배송 지정<input type="date"></li>
+            </ul>
+        </fieldset>
+
+        <textarea cols="50" rows="10" placeholder="입력해주세요"></textarea>
+
+        <select name="reg" multiple size="10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <input type="text" list="데이터목록 ID">
+        <datalist id="데이터목록 ID">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </datalist>
+        <br>
+        <input type="submit" value="등록">
+        <input type="reset" value="도르마무">
+        <button type="submit">등록2</button>
+        <button type="button">눌러보고 싶징?</button>
+    </form>
+</body>
+
+</html>
+

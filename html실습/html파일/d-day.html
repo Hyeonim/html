@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>디데이 카운터</title>
+</head>
+<style>
+    h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+}
+
+span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+</style>
+<body>
+  <h1>디데이 카운터</h1>
+  <p>종료일까지</p>
+  <p>남은 일수는 <span id="countdown"></span>일입니다.</p>
+  <script>
+    const startDate = new Date("2023-10-17");
+    const endDate = new Date("2024-03-13");
+    const diff = endDate - startDate;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const countdown = document.querySelector("#countdown");
+    countdown.textContent = days;
+  </script>
+</body>
+</html>

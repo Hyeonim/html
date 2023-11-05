@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .drop {
+        position: relative;
+        display: inline-block;
+    }
+
+    .drop-content {
+        display: none;
+        position: absolute;
+        background-color: wheat;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px yellow;
+        z-index: 1;
+    }
+
+    .drop:hover .drop-content {
+        display: block;
+    }
+
+    .drop-menu {
+
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropd-menu-content {
+        display: none;
+        position: absolute;
+        background-color: wheat;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px yellow;
+        z-index: 1;
+    }
+
+    .dropbtn {
+        background-color: yellow;
+        color: pink;
+    }
+
+    .dropd-menu-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .drop-menu:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+
+    .drop-menu:hover .dropd-menu-content {
+        display: block;
+    }
+
+    .dropd-menu-content a:hover{
+        background-color: green;
+    }
+</style>
+
+<body>
+
+    <h2>hoverable</h2>
+    <p>마우스를 텍스트 위에 두면 상세 내용 나옴</p>
+    <div class="drop">
+        <span>마우스</span>
+        <div class="drop-content">
+            만나서 반가워
+            만나서 반가워
+            만나서 반가워
+            만나서 반가워
+            만나서 반가워
+
+        </div>
+    </div>
+
+    
+        <div class="drop-menu">
+            <button class="dropbtn">dropdown menu</button>
+            <div class="dropd-menu-content">
+                <a href="#">one</a>
+                <a href="#">two</a>
+                <a href="#">three</a>
+            </div>
+        </div>
+    
+</body>
+
+</html>

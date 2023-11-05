@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<style>
+    ul {
+        list-style-type: none;
+    }
+
+
+    #signup2 input:not([type=text]):focus + label { 
+        color: red;
+        font-weight: bold;
+    }
+
+</style>
+
+
+<body>
+    <div class="container">
+        <nav class="navi">
+            <ul>
+                <li><a href="#intro">이용 안내</a></li>
+                <li><a href="#room">객실 소개</a></li>
+                <li><a href="#reservation">예약 방법 및 요금</a></li>
+                <li><a href="#">예약하기</a></li>
+            </ul>
+        </nav>
+
+        <form action="" id="signup2" class="test">
+            <fieldset>
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <i class='bx bx-shield-x'></i>
+                        <input type="text" id="name" >
+                        <label>이름</label>
+
+                    </li>
+                    <li>
+                        <input type="tel">
+                        <label>연락처</label>
+                    </li>
+                    <li>
+                        <input type="email">
+                        <label>이메일</label>
+                    </li>
+                    <li>
+                        <input type="password">
+                        <label>비밀번호</label>
+                    </li>
+<input type="submit">
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>객실형태</legend>
+                <ul id ="signup">
+                    <li>
+                        <input type="radio" name="room" id="basic">
+
+                        <label for="basic">2인용</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="room" id="family">
+
+                        <label for="family">8인용</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+</body>
+
+</html>

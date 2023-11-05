@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #ad {
+        background-color: red;
+        width: 400px;
+        height: 400px;
+        padding: 30px;
+        background-clip: padding-box;
+        border: 1px solid black;
+        background-image: url('/img/다운로드.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* background-position: center; */
+        /* background-origin: border-box; */
+        /* position: fixed; */
+
+    }
+
+    #bd {
+
+        width: 600px;
+        height: 500px;
+        background-image: url('/img/다운로드.png');
+        /* background-attachment: fixed; */
+        /* background-size: 70% 50%; */
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #cd {
+        background-color: yellow !important;
+        width: 400px;
+        height: 400px;
+        padding: 30px;
+        background-clip: content-box;
+        border: 1px solid black;
+        background-image: url('/img/다운로드.png');
+        background-repeat: repeat-y;
+    }
+
+    #dd {
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(circle at 50% 50%, purple,white) !important;
+
+        border: 1px solid black !important;
+
+    }
+
+    body {
+        min-height: 1500vh;
+        overflow: auto;
+    }
+</style>
+
+<body>
+    <div id="ad"> </div>
+    <div id="bd"></div>
+    <div id="cd"></div>
+    <div id="dd"> </div>
+
+
+</body>
+
+</html>
